@@ -59,8 +59,9 @@ body{
    
 }
 .Mylearning__popup{
+    
     position: absolute;
-    background-color:lavenderblush;
+    background-color:snow;
     border: solid black 1px;
     width: 100px;
     padding: 20px;
@@ -70,6 +71,7 @@ body{
 
 }
 .Mylearning:hover .Mylearning__popup{
+    
     display: block;
 }
 .categories{
@@ -85,7 +87,17 @@ body{
     color: white;
     padding: 10px;
     border-radius: 30px;
+    border: solid #A435F0 1px;
 }
+.categories p:hover{
+    transition: 1s;
+    background: transparent;
+    color: black;
+    border: solid #A435F0 1px;
+
+}
+
+
 .sales-image{
     position: relative;
 }
@@ -101,10 +113,30 @@ body{
     position: absolute;
     top: 10%;
     left:7%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 
 }
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+
+    }
+    100%{
+opacity: 1;
+transform: scale(1);
+    }
+}
+
+
 .recommended
-{padding: 10px;
+
+
+{
+    padding: 10px;
 
 }
 .recommended__container{
